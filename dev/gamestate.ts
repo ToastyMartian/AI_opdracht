@@ -13,7 +13,7 @@ class GameState {
     public getScore() : [number, boolean] {
         // game over
         for (let z of this.knightPositions) {
-            if (Board.samePosition(z, this.kingPos)) {
+            if (Board.samePosition(z, this.kingPos)) {           
                 return [-100, true];
             }
         }
